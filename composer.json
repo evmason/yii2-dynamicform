@@ -1,8 +1,9 @@
 {
-    "name": "wbraganca/yii2-dynamicform",
+    "name": "evmason/yii2-dynamicform",
     "description": "It is widget to yii2 framework to clone form elements in a nested manner, maintaining accessibility.",
     "keywords": [
         "wbraganca",
+        "evmason",
         "yii2",
         "extension",
         "widget",
@@ -10,28 +11,31 @@
         "copy DOM element",
         "yii2 dynamic form"
     ],
-    "type": "yii2-extension",
-    "license": "BSD-3-Clause",
+    "license": "proprietary",
     "support": {
-        "issues": "https://github.com/wbraganca/yii2-dynamicform/issues",
-        "wiki": "https://github.com/wbraganca/yii2-dynamicform/wiki/",
-        "source": "https://github.com/wbraganca/yii2-dynamicform"
+        "issues": "https://github.com/evmason/yii2-dynamicform/issues",
+        "wiki": "https://github.com/evmason/yii2-dynamicform/wiki/",
+        "source": "https://github.com/evmason/yii2-dynamicform"
     },
+    "type": "yii2-extension",
     "authors": [
         {
-            "name": "Wanderson Bragança",
-            "email": "wanderson.wbc@gmail.com",
-            "homepage": "http://wbraganca.com"
+            "name": "Miroshnichenko Evgeniy",
+            "email": "evgeni_mir@mail.ru"
         }
     ],
     "require": {
+        "php": ">=8.3.0",
         "yiisoft/yii2": "~2.0.5",
-        "symfony/css-selector": "~2.8|~3.0",
-        "symfony/dom-crawler": "~2.8|~3.0"
+        "symfony/css-selector": "v7.0.3",
+        "symfony/dom-crawler": "v7.0.4"
     },
     "autoload": {
         "psr-4": {
-            "wbraganca\\dynamicform\\": "src"
+            "evmason\\dynamicform\\": "src"
         }
-    }
+    },
+	"replace": {
+		"wbraganca/yii2-dynamicform":"2.0.*"
+	}
 }
